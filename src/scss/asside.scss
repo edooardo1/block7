@@ -1,0 +1,238 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.aside.open {
+  left: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  }
+
+  .button:hover {
+  filter: saturate(150%);
+  opacity: 0.8; 
+  }
+
+  .href__centr{
+    margin-top: auto;
+    margin-bottom: auto; 
+  }
+
+  .aside__header{
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    padding-left: 10px; 
+  }
+
+
+.logo{
+  width: 96.55px;  
+  margin-right: auto;
+}
+
+.exit{
+  background: url(../img/exit.svg) no-repeat center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;  
+}
+
+.serch{  
+  width: 40px;
+  height: 40px; 
+  justify-content: end;  
+  background-image: url(../img/serch.svg);
+  margin-top: auto;
+  margin-bottom: auto; 
+}
+
+.aside__main{
+    width: 222px;
+    height: 576px;
+}
+
+.aside__option:focus{
+  display: flex;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(126, 126, 130, 1);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url(../img/border_mini.svg);
+  padding-left: 20px; 
+  align-items: center;
+  font-weight: normal;
+  height: 32px;
+}
+
+.aside__services{
+    list-style-type: none;
+    display: block;
+    padding-left: 20px;
+}
+
+.aside__option{
+    margin-bottom: 20px;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.aside__href{
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-weight: lighter;
+}
+
+.aside__footer{
+    width: 222px;
+    padding-left: 10px; 
+}
+
+.contact{
+    width: 196px;
+    height: 124px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.call{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/call.svg);
+  margin-top: auto;
+  margin-bottom: auto; 
+}
+
+.chat{
+  display:flex;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/chat.svg);
+  margin-top: auto;
+  margin-bottom: auto; 
+}
+
+.profile{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/profile.svg);
+  justify-content: right;
+  margin-top: auto;
+  margin-bottom: auto; 
+}
+
+.mail{
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.phone{
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:rgba(27, 28, 33, 1);
+    font-weight: bold;
+}
+
+.lang{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.lang__href{
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
+}
+
+.lang__href:focus{
+    color: rgba(126, 126, 130, 1);
+}
+
+@media (min-width: 1366px) {
+  .aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100vh;
+    background: #fff; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  }
+  .exit{
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
