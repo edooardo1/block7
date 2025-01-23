@@ -4,6 +4,8 @@ import './modal.js';
 import './scriptSwiper.js';
 import './toggleRepair.js';
 import './toggleTipe.js';
+import '/toggleContent.js';
+import { updateText, toggleVisibility } from '.toggleContent.js';
 import { toggleTipe } from './toggleTipe.js';
 document.addEventListener('DOMContentLoaded', () => {
     window.toggleTipe = toggleTipe;
