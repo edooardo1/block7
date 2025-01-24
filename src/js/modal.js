@@ -1,5 +1,3 @@
-setupModal('modal-feedback', 'open-modal-feedback', 'modal-feedback-close');
-setupModal('modal-call', 'open-modal-call', 'modal-call-close');
 export function setupModal(modalId, openButtonId, closeButtonId) {
   const modal = document.getElementById(modalId);
   const openButton = document.getElementById(openButtonId);

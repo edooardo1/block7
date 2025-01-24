@@ -3,18 +3,27 @@ export function setupAsideModal(modalId, openButtonId, closeButtonId) {
     const modal = aside.querySelector(`#${modalId}`);
     const openButton = aside.querySelector(`#${openButtonId}`);
     const closeButton = aside.querySelector(`#${closeButtonId}`);
-    
+
+    function closeModal() {
+        modal.style.display = 'none';
+        document.removeEventListener('keydown', handleEscapeKey);
+    }
+    function handleEscapeKey(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    }
+
     openButton.addEventListener('click', () => {
         modal.style.display = 'flex';
+        document.addEventListener('keydown', handleEscapeKey);
     });
 
-    closeButton.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
+    closeButton.addEventListener('click', closeModal);
 
     modal.addEventListener('click', (event) => {
         if (event.target === modal) {
-            modal.style.display = 'none';
+            closeModal();
         }
     });
 }

@@ -27,7 +27,7 @@
       <div class="aside__header">
         <button id="close-btn" class="exit button"></button>
         <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
-        <button class="serch button"></button>
+        <button class="aside__serch button"></button>
       </div>
       <div class="aside__main">
         <ul class="aside__services">
@@ -211,11 +211,12 @@
         <button class="tipe__button">Ремонт ноутбуков </button>
         <button class="tipe__button">Ремонт планшетов </button>
         <button class="tipe__button">Ремонт ПК </button>
-        <button class="tipe__button button__hiden--tipe tablet__hiden--tipe button__viseble">Ремонт  мониторов </button>
+        <button class="tipe__button button__hiden--tipe tablet__hiden--tipe button__viseble--tipe">Ремонт  мониторов </button>
         <button class="tipe__button button__hiden--tipe laptop__hiden--tipe">Ремонт планшетов </button>
         <button class="tipe__button button__hiden--tipe laptop__hiden--tipe">Ремонт ПК </button>
         <button class="tipe__button button__hiden--tipe laptop__hiden--tipe">Ремонт  мониторов </button>
-        </div> 
+        </div>
+        <button id="toggleTipe" class="more more--hiden" onclick="toggleTipe()">Показать все</button>  
       </div>
       <div class="slider-mode--tipe">
         <div class="swiper slider slider2">
@@ -230,9 +231,9 @@
             </div>
             <div class="swiper-pagination slider2-pagination"></div>
         </div>
-      </div>  
-      </div>  
-      <button id="toggleTipe" class="more more--hiden" onclick="toggleTipe()">Показать все</button>
+      </div>
+  
+    </div>  
     </div>
     <div class="container">
       <div class="table__header">
@@ -341,6 +342,7 @@
         </p>
         <a href="#" class="offer-link">Получить коммерческое предложение</a>
       </div>
+
     </main>
     <footer class="footer">
       <div>© 2019 CPS Разработано командой Apesong </div>

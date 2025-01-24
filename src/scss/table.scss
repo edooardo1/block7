@@ -1,34 +1,35 @@
-
 .container {
   max-width: 100%;
   margin: 0;
   margin-bottom: 40px;
 }
 
-.table__header{
+.table__header {
   height: 56px;
-  background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 98.61%);
-  border-top: solid 2px rgb(144, 248, 220);
+  background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
+  border-top: solid 2px #90F8DC;
   margin-bottom: 20px;
   margin-top: 40px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 } 
 
-.title--table{
-  font-family: TT Lakes;
+.title--table {
+  font-family: "TT Lakes", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -0.20000000298023224px;
+  letter-spacing: -0.2px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   font-weight: 300;
   color: rgba(126, 126, 130, 1);
-  padding-left: 30px;
 }
 
 .table-mode {
   display: block;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .slider-mode {
@@ -38,17 +39,31 @@
 .price__service {
   width: 100%;
   border-collapse: collapse;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .price__service th, .price__service td {
-  padding: 10px;
-  border: 1px solid #EAEAEA;
+  padding: 15px 20px;
+  border-bottom: 1px solid #EAEAEA;
   text-align: left;
+  font-size: 16px;
 }
 
 .price__service th {
   background-color: #F8F8F8;
   color: #7E7E82;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.price__service tr:last-child td {
+  border-bottom: none;
+}
+
+.price__service tr:hover td {
+  background-color: #FAFAFA;
 }
 
 .order {
@@ -56,8 +71,18 @@
   color: #FFFFFF;
   border: none;
   border-radius: 20px;
-  padding: 5px 15px;
+  padding: 10px 25px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(255, 64, 129, 0.3);
+}
+
+.order:hover {
+  background-color: #E2366B;
+  box-shadow: 0 4px 8px rgba(255, 64, 129, 0.4);
 }
 
 .swiper {
@@ -80,6 +105,12 @@
   font-size: 14px;
   color: #7E7E82;
   margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.offer{
+  width: 421px;
+  padding-left: 30px;
 }
 
 .offer-text {
@@ -87,12 +118,13 @@
   line-height: 1.5;
   color: #7E7E82;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .offer-link {
   font-size: 16px;
   font-weight: bold;
-  color: #000;
+  color: black;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -100,7 +132,7 @@
 }
 
 .offer-link:hover {
-  color: #FF3E79;
+  color: #E2366B;
 }
 
 .offer-link::after {
@@ -123,5 +155,20 @@
   }
   .slider-mode {
     display: block;
+  }
+  .offer{
+    padding: 0;
+    width: auto;
+  }
+  .offer-text {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .offer-link {
+    font-size: 14px;
+    justify-content: center;
+    margin: 0 auto;
   }
 }

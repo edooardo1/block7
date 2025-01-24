@@ -57,6 +57,7 @@
     align-items: center;
     gap:10px;
     padding-left: 10px; 
+    padding-right: 10px;
   }
 
 
@@ -74,11 +75,11 @@
   cursor: pointer;  
 }
 
-.serch{  
+.aside__serch{ 
   width: 40px;
   height: 40px; 
   justify-content: end;  
-  background-image: url(../img/serch.svg);
+  background-image: url(../img/aside_serch.svg);
   margin-top: auto;
   margin-bottom: auto; 
 }
