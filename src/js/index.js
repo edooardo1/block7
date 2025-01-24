@@ -4,8 +4,12 @@ import './modal.js';
 import './scriptSwiper.js';
 import './toggleRepair.js';
 import './toggleTipe.js';
-import '/toggleContent.js';
-import { updateText, toggleVisibility } from '.toggleContent.js';
+import './toggleContent.js';
+import {updateText, toggleVisibility } from './toggleContent.js';
+document.addEventListener('DOMContentLoaded', () => {
+    window.toggleVisibility = toggleVisibility;
+    updateText(); 
+  });
 import { toggleTipe } from './toggleTipe.js';
 document.addEventListener('DOMContentLoaded', () => {
     window.toggleTipe = toggleTipe;
