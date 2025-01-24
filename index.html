@@ -24,7 +24,7 @@
       <div class="aside__header">
         <button id="close-btn" class="exit button"></button>
         <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
-        <button class="serch button"></button>
+        <button class="aside__serch button"></button>
       </div>
       <div class="aside__main">
         <ul class="aside__services">
@@ -109,7 +109,11 @@
               <div class="content__about"><p>Мы являемся авторизованным сервисным центром по ремонту техники
         Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
         <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
-        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p></div>
+        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+        <p>Мы являемся авторизованным сервисным центром по ремонту техники
+          Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
+          Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p></div>
         <button id="toggleButton" class="more" onclick="toggleVisibility()">Показать все</button>
             </section>
             <section>
@@ -204,11 +208,12 @@
         <button class="tipe__button">Ремонт ноутбуков </button>
         <button class="tipe__button">Ремонт планшетов </button>
         <button class="tipe__button">Ремонт ПК </button>
-        <button class="tipe__button button__hiden--tipe tablet__hiden--tipe button__viseble">Ремонт  мониторов </button>
+        <button class="tipe__button button__hiden--tipe tablet__hiden--tipe button__viseble--tipe">Ремонт  мониторов </button>
         <button class="tipe__button button__hiden--tipe laptop__hiden--tipe">Ремонт планшетов </button>
         <button class="tipe__button button__hiden--tipe laptop__hiden--tipe">Ремонт ПК </button>
         <button class="tipe__button button__hiden--tipe laptop__hiden--tipe">Ремонт  мониторов </button>
-        </div> 
+        </div>
+        <button id="toggleTipe" class="more more--hiden" onclick="toggleTipe()">Показать все</button>  
       </div>
       <div class="slider-mode--tipe">
         <div class="swiper slider slider2">
@@ -223,9 +228,9 @@
             </div>
             <div class="swiper-pagination slider2-pagination"></div>
         </div>
-      </div>  
-      </div>  
-      <button id="toggleTipe" class="more more--hiden" onclick="toggleTipe()">Показать все</button>
+      </div>
+  
+    </div>  
     
     <div class="container">
       <div class="table__header">
@@ -334,6 +339,7 @@
         </p>
         <a href="#" class="offer-link">Получить коммерческое предложение</a>
       </div>
+
     </div></main>
     <footer class="footer">
       <div>© 2019 CPS Разработано командой Apesong </div>
